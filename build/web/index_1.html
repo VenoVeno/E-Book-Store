@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="newcss.css"> 
+    </head>
+    <body>
+
+    <section class="container-fluid">
+        <section class="row justify-content-center">
+            <section class="col-12 col-sm-6 col-md-3">
+                
+                <nav class="navbar navbar-expand-lg navbar-light d-flex">
+
+                    <a class="navbar-brand mr-auto p-2" href="#">
+                        <img src="Home.png" width="30" height="30" class="d-inline-block align-top rounded mx-auto d-block"><small> Home </small>
+                    </a>
+
+<!--                    <a class="navbar-brand" href="login.html">
+                        <img src="Login.jpg" width="30" height="30" class="d-inline-block align-top rounded mx-auto d-block"><small>  &nbsp   Login </small>
+                    </a>
+
+                    <a class="navbar-brand" href="signup.html">
+                        <img src="Signup.png" width="30" height="30" class="d-inline-block align-top rounded mx-auto d-block"><small> &nbsp  Sign Up </small>
+                    </a>-->
+
+                </nav>
+                
+       <form class="form-container" name="find" method="post" action="categorymatch">
+
+       <div class="form-group" id="Category">
+        <label for="SelectSeat">Category <span class="red">*</span></label>                          
+              <select class="form-control" id="SelectCategory" name= "Categories" aria-describedby="Categoryhelp">
+                    <option disabled value=" ">Avaiable Category</option>
+                    <option value="Personal Care" selected>Personal Care</option>
+                    <option value="Motivation">Motivation</option>
+                    <option value="Laughter">Laughter</option>
+                    <option value="Kitchen Needs">Kitchen Needs</option>
+                    <option value="Course Specialization">Course Specialization</option>
+              </select>
+        <small id="Categoryhelp" class="form-text text-muted text-center">Select the Category from the above list</small>                        
+        </div> 
+        <button class="form-group btn btn-dark btn-block">Books Available?</button>
+
+     </form>
+             </section>
+         </section>
+     </section>
+    </body>
+</html>

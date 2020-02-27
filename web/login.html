@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="newcss.css">
+    </head>
+    <body>
+        
+        <section class="container-fluid">
+          <section class="row justify-content-center">
+              <section class="col-12 col-sm-6 col-md-3">
+                  
+                <nav class="navbar navbar-expand-lg navbar-light d-flex">
+
+<!--                  <a class="navbar-brand mr-auto p-2" href="index.html">
+                      <img src="Home.png" width="30" height="30" class="d-inline-block align-top rounded mx-auto d-block"><small> Home </small>
+                  </a>-->
+
+                  <a class="navbar-brand" href="#">
+                      <img src="Login.jpg" width="30" height="30" class="d-inline-block align-top rounded mx-auto d-block"><small>  &nbsp   Login </small>
+                  </a>
+
+                  <a class="navbar-brand" href="signup.html">
+                      <img src="Signup.png" width="30" height="30" class="d-inline-block align-top rounded mx-auto d-block"><small> &nbsp  Sign Up </small>
+                  </a>
+
+                </nav>
+                  
+                <form class="form-container" method="post" name="login" action="loginservlet">
+                    
+                    <div class="form-group text-danger text-center">Login Before You Proceed to Search!</div>
+                    
+                    <div class="form-group">
+                        <label for="InputEmail">Mail or Name</label>
+                        <input type="text" class="form-control" id="InputEmail" name= "Uemail" aria-describedby="emailHelp" placeholder="Enter Mail or Name" required>
+                        <small id="emaileHelp" class="form-text text-muted text-center">We'll never share your with anyone else..</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="InputPassword">Password</label>
+                        <input type="password" class="form-control" id="InputPassword" name= "Upwd" aria-describedby="pwdHelp" placeholder="Enter Password" required>
+                        <small id="pwdHelp" class="form-text text-muted text-center">Enter Your Password above..</small>
+                    </div>
+                    
+                    <button class="btn btn-dark btn-block" data-toggle="tooltip" title="Login to Proceed" data-placement="bottom">Login</button>
+                </form>
+                  
+                <form class="form-container" name="signupredirect">
+                    <div class="form-group">
+                        <small class="text-muted form-text text-center">
+                           Not have an account yet?<a href="signup.html">&nbsp Signup</a>
+                        </small>
+                    </div>                               
+                </form>
+
+                    
+                  </section>
+            </section>
+      </section>
+    </body>
+</html>
